@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue-col: #0059ff; 
+    --top-blue: rgb(6, 74, 151);
+    --lavender: #c8b6ff;
+}
+
+body{
+    height: 1000vh;
+    font-family: "poppins";
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5f5f5f;
+    
+}
+
+.container{
+    width: 68%;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header .row a{
+    
+    color: #fff;
+}
+
+.header{
+    height: 44px;
+    background-color: var(--top-blue);
+}
+
+.header .row{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-con li{
+    display: inline-block;
+}
+
+.row .right-con li{
+    display: inline-block;
+}
+
+.left-con li a {
+    margin-right: 27px;
+}
+
+.right-con li {
+    margin-left: 30px;
+}
+
+/*header-2*/
+
+.header-2{
+    background-color: #fff;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.header-2 .row{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-2 .left-nav{
+    display: flex;
+    align-items: center;
+}
+
+.left-nav li a{
+    color: #5f5f5f;
+    text-transform: capitalize;
+}
+
+.left-nav li , .logo{
+    margin-right: 33px;
+}
+
+
+
+.header-2 .right-nav{
+    display:flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.right-nav li{
+    margin-left: 25px;
+}
+
+.blue-btn{
+    padding: 11px 30px;
+    color: #fff;
+    background-color: var(--blue-col);
+    border-radius: 8px;
+}
+
+.click a:visited{
+    color: var(--blue-col);
+}
+
+.click{
+    position: relative;
+}
+
+.click::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+    margin-top: 30px;
+}
+
+/*----------------Banner-------------*/
+.banner{
+    height: 770px;
+    max-width: 100%;
+    background-image: linear-gradient(0deg,hsla(0,3%,8%,.48),rgba(0,0,0,.48)) ,url("/img/banner_img_a1cfa1f4e1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2000;
+}
+
+.banner .content{
+    height: 770px;
+    width: 50%;
+    color: #fff;
+    transform: translateY(40%);
+}
+
+.con-title{
+    font-size: 47px;
+    padding-bottom: 20px;
+}
+
+.con-para {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+
+/*-----------------who are we---------------------*/
+
+.who .row{
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 150px;
+}
+
+.who-title{
+    font-size: 42px;
+    color: var(--top-blue);
+    width: 100%;
+    text-align: left;
+}
+
+.who-con{
+    line-height: 2;
+}
+.who img{
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/*---------------why choose us------------------*/
+
+.why{
+    height: 568px;
+    background-image: url("/img/notch-banner.daa42472.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    color: #fff;
+    line-height: 2;
+}
+
+.why-title{
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--lavender);
+}
+
+.why-con{
+    width: 50%;
+}
+
+.why .content{
+    height: 568px;
+    transform: translateY(30%);
+}
+
+
+/*-----------------------Universities-------------------------*/
+
+
+.universities .row{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    
+}
+
+.uni-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--top-blue);
+}
+.uni-con{
+    line-height: 2;
+    font-size: 15px;
+    
+}
+
+.exp-btn a{
+    color: var(--blue-col);
+}
+
+.exp-btn {
+    margin-top: 25px;
+    color: var(--blue-col);
+    position: relative;
+}
+
+.exp-btn::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("/img/right-arrow.37e37ef4.png");
+    background-size: cover;
+    cursor: pointer;
+    top: -10%;
+    left: 113px;
+    transition: all 0.3s ease-in-out;
+}
+
+.exp-btn:hover::after{
+    left: 118px;
+}
+
+.universities .row-2{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.universities .pop-img{
+    max-width: 23%;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pop-img img{
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.row-2 h2{
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    bottom: 8%;
+    left: 15%;
+    z-index: 3;
+}
+
+.row-2 .pop-img img{
+    transform: scale(1);
+    transition: 1s ease-in-out;
+
+}
+
+.pop-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg,rgba(31,31,31,0) 50%,rgba(6,71,137,.72) 77.72%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    
+
+}
+
+.pop-img:hover::after{
+    opacity: 1;
+    
+    
+}
+
+.row-2 .pop-img img{
+    transform: scale(1);
+    transition: 1s ease-in-out;
+    
+}
+
+.row-2 .pop-img:hover img{
+    transform: scale(1.2);
+ 
+}
+
+
+
+/*--------------------------Lucrative Courses-----------------------------*/
+
+
+
+.Lucrative{
+    background-color: #f1f1f1;
+}
+
+ .row-3{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-bottom: 55px;
+}
+
+.luc-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--top-blue);
+    line-height: 1.5;
+}
+
+.luc-con p{
+    line-height: 2;
+}
+
+
+.rect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    padding-bottom: 110px;
+}
+
+.rect-col{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 36px 127px 36px 45px;
+    border-radius: 16px;
+}
+
+.rect-col h4{
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 150px;
+}
+
+figure{
+    margin-right: 30px;
+}
+
+.rect-col:hover{
+    background: linear-gradient(104.51deg,rgba(200,182,255,.5) -47.74%,rgba(255,214,255,.5) 153.26%);
+    color: var(--top-blue);
+}
+
+.rect-col h4:hover{
+    color: var(--top-blue);
+}
+
+.rect-col figure svg rect{
+    fill: #9F9F9F;
+    transition: all 0.2s ease-in-out;
+}
+
+.rect-col:hover figure svg rect{
+    fill: var(--top-blue);
+}
+
+
+/*-----------------Success Stories----------------------*/
+
+.sucess-bg{
+    background: linear-gradient(104.51deg,rgba(200,182,255,.5) -47.74%,rgba(255,214,255,.5) 153.26%);
+}
+
+.suc-row{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.suc-title{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--top-blue);
+    width: 550px;
+}
+
+.suc-con{
+    line-height: 2;
+}
+
+.row-stories{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    line-height: 2;
+}
+
+.author-row{
+    margin-top: 25px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.sto-col{
+    padding: 30px 23px 30px 25px;
+    background-color: #fff;
+    border-radius: 16px;
+
+}
+
+.author-name  span{
+    font-weight: 600;
+}
+
+.arrows-row{
+    padding: 60px 0 100px 0;
+    display: flex;
+    column-gap: 15px;
+}
+
+/*------------------------------------Education Expert--------------------------------------*/
+
+.expert{
+    background-color: #f1f1f1;
+}
+
+.exp-row{
+    padding-top: 106px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-title{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--top-blue);
+    line-height: 1.5;
+    width: 700px;
+}
+
+.exp-img-row{
+    display: flex;
+    column-gap: 16px;
+}
+
+.exp-con{
+    line-height: 2;
+}
+
+.exp-imp-col{
+    position: relative;
+}
+
+.exp-imp-col img{
+    width: 415px;
+    height: 415px;
+}
+
+.play-icon{
+    cursor: pointer;
+}
+
+.play-icon::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 79%;
+    left: 8%;
+    height: 56px;
+    width: 56px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+.play-icon svg{
+    position: absolute;
+    top: 82.5%;
+    left: 13.1%;
+    z-index: 1;
+}
+
+.play-icon::after{
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-icon:hover::after{
+    background: var(--blue-col);
+}
+
+.play-icon svg path{
+    stroke: #ababab;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-icon:hover svg path{
+    stroke: #fff;
+}
+
