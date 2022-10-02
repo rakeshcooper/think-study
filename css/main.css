@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,400;0,500;1,100&family=Poppins:wght@100;200;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,8 @@
 
 body {
   height: 1000vh;
-  font-family: "poppins";
+  font-family: "Inter Tight", sans-serif;
+  letter-spacing: 0.8px;
   line-height: 1;
   font-size: 16px;
   font-weight: 400;
@@ -20,7 +22,7 @@ body {
 }
 
 .container {
-  width: 68%;
+  width: 1295px;
   margin: auto;
 }
 
@@ -217,8 +219,7 @@ a {
 .universities .row {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  padding-bottom: 45px;
 }
 
 .uni-title {
@@ -262,23 +263,29 @@ a {
 
 .universities .row-2 {
   display: flex;
-  flex-shrink: 0;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 30px;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .universities .pop-img {
-  max-width: 23%;
-  margin-top: 45px;
-  margin-bottom: 100px;
+  width: 306px;
+  height: 416px;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
 }
 
 .pop-img img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   position: relative;
 }
 
@@ -286,10 +293,11 @@ a {
   display: block;
   position: absolute;
   color: #fff;
-  font-size: 32px;
+  width: 100px;
+  font-size: 31px;
   font-weight: 400;
   line-height: 1.2;
-  bottom: 8%;
+  bottom: 10%;
   left: 15%;
   z-index: 3;
 }
@@ -473,8 +481,6 @@ figure {
 
 .exp-img-row {
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
 }
 
 .exp-con {
@@ -483,6 +489,10 @@ figure {
 
 .exp-imp-col {
   position: relative;
+}
+
+.exp-imp-col {
+  padding: 0 9px;
 }
 
 .exp-imp-col img {
@@ -529,4 +539,74 @@ figure {
 
 .play-icon:hover svg path {
   stroke: #fff;
+}
+
+/*--------------------Blogs--------------------------*/
+.blog-row {
+  margin-top: 106px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+}
+
+.blog-title h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--top-blue);
+  width: 350px;
+  line-height: 1.5;
+}
+
+.blog-con p {
+  line-height: 2;
+}
+
+.blog-row-2 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  row-gap: 30px;
+}
+
+.blog-col > img {
+  width: 420px;
+  height: 100%;
+}
+
+.blog-col {
+  width: 400px;
+  padding: 0 12px;
+}
+
+.blog-row-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-row-3 .bloger p {
+  margin-right: 110px;
+  color: var(--top-blue);
+}
+
+.blog-title-2 h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #232324;
+  margin-bottom: 15px;
+}
+
+.blog-title-2:hover h3 {
+  color: var(--top-blue);
+}
+
+.blog-con-2 p {
+  line-height: 1.5;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
