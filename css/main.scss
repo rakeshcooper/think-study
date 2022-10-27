@@ -201,19 +201,20 @@ a{
     margin-top: 110px;
     display: flex;
     justify-content: space-between;
-    column-gap: 135px;
+    
 }
 
 .who-title{
     font-size: 42px;
     color: var(--top-blue);
-    width: 100%;
+    width: 50%;
     text-align: left;
     line-height: 1.5;
 }
 
 .who-con{
     line-height: 2;
+    width: 70%;
 }
 .who img{
     max-width: 100%;
@@ -235,6 +236,7 @@ a{
 }
 
 .why-title{
+    
     font-size: 41px;
     font-weight: 400;
     color: var(--lavender);
@@ -271,8 +273,9 @@ a{
     line-height: 1.5;
 }
 .uni-con{
+    width: 100%;
     line-height: 2;
-    font-size: 15px;
+    font-size: 16px;
     
     
 }
@@ -396,7 +399,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
 }
 
 .luc-title{
@@ -408,6 +411,7 @@ a{
 }
 
 .luc-con p{
+    width: 100%;
     line-height: 2;
 }
 
@@ -484,10 +488,11 @@ figure{
     font-weight: 400;
     line-height: 1.5;
     color: var(--top-blue);
-    width: 550px;
+    width: 75%;
 }
 
 .suc-con{
+    width: 100%;
     line-height: 2;
 }
 
@@ -542,7 +547,12 @@ figure{
     font-weight: 400;
     color: var(--top-blue);
     line-height: 1.5;
-    width: 700px;
+    width: 60%;
+}
+
+.exp-con{
+    width: 100%;
+    line-height: 2;
 }
 
 .exp-img-row{
@@ -550,12 +560,10 @@ figure{
     
 }
 
-.exp-con{
-    line-height: 2;
-}
+
 
 .exp-imp-col{
-    width: 430px;
+    width: 100%;
     height: 100%;
     img{
         width: 100%;
@@ -631,6 +639,7 @@ figure{
 }
 
 .blog-con p{
+    width: 100%;
     line-height: 2;
 }
 
@@ -725,6 +734,7 @@ figure{
     }
 
     .form-title h2{
+        width: 100%;
         font-size: 43px;
         font-weight: 400;
         color: var(--top-blue);
@@ -733,13 +743,13 @@ figure{
     }
 
     .form-col-2{
-        max-width: 45%;
+        width: 88%;
         margin-top: 100px;
         padding-bottom: 100px;
 
         .forms{
             margin-top: 90px;
-            max-width: 122%;
+            max-width: 100%;
             
             
         }
@@ -761,7 +771,7 @@ figure{
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            background-image: url('/img/select-arrow.b22d4c4b.svg');
+            background-image: url('./img/select-arrow.b22d4c4b.svg');
             background-repeat: no-repeat;
             background-position: right 20px top 50%;
         }
@@ -769,7 +779,7 @@ figure{
         
 
         .forms .left-form{
-            margin-right: 20px;
+            margin-right: 3%;
         }
 
         .forms-2{
@@ -785,7 +795,7 @@ figure{
             }
 
             .check-box{
-                display: inline-flex;
+                display: flex;
                 align-items: center;
                 column-gap: 15px;
                 cursor: pointer;
@@ -935,12 +945,18 @@ footer{
 
 /*-----------------study-abroad-----------------------*/
 
+
+
 .abrd-row{
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
     column-gap: 150px;
+
+    img{
+        width: 100%;
+    }
 }
 
 .abrd-con{
@@ -956,6 +972,7 @@ footer{
 
 /*blogs*/
 .abroad-blog{
+    
     .blog-row-2{
         margin-top: 50px;
         display: flex;
@@ -1008,6 +1025,10 @@ footer{
     display: flex;
     align-items: center;
     column-gap: 180px;
+
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -1069,6 +1090,10 @@ footer{
     display: flex;
     align-items: center;
     column-gap: 185px;
+
+    img{
+        width: 100%;
+    }
 }
 
 .his-title h2{
@@ -1317,7 +1342,7 @@ footer{
             .close-btn{
                 display: block;
                 position: absolute;
-                top: 130px;
+                top: 70px;
                 right: 15%;
             }
             
@@ -1345,6 +1370,8 @@ footer{
             }
         }
 
+        
+     
         
 
     }
@@ -1482,6 +1509,9 @@ footer{
                 margin-top: 90px;
                 max-width: 122%;
                 
+                .left-form{
+                    margin-right: 0%;
+                }
                 
             }
             
@@ -1564,6 +1594,11 @@ footer{
     .abrd-title h2{
         margin-top: 20px;
         margin-bottom: 10px;
+    }
+
+    .abroad .why .content{
+        height: 568px;
+        transform: translateY(10%);
     }
     
     /*courses*/

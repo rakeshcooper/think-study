@@ -185,20 +185,19 @@ a {
   margin-top: 110px;
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 135px;
-       column-gap: 135px;
 }
 
 .who-title {
   font-size: 42px;
   color: var(--top-blue);
-  width: 100%;
+  width: 50%;
   text-align: left;
   line-height: 1.5;
 }
 
 .who-con {
   line-height: 2;
+  width: 70%;
 }
 
 .who img {
@@ -252,8 +251,9 @@ a {
 }
 
 .uni-con {
+  width: 100%;
   line-height: 2;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .exp-btn a {
@@ -364,7 +364,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
 }
 
 .luc-title {
@@ -376,6 +376,7 @@ a {
 }
 
 .luc-con p {
+  width: 100%;
   line-height: 2;
 }
 
@@ -445,10 +446,11 @@ figure {
   font-weight: 400;
   line-height: 1.5;
   color: var(--top-blue);
-  width: 550px;
+  width: 75%;
 }
 
 .suc-con {
+  width: 100%;
   line-height: 2;
 }
 
@@ -502,19 +504,20 @@ figure {
   font-weight: 400;
   color: var(--top-blue);
   line-height: 1.5;
-  width: 700px;
+  width: 60%;
+}
+
+.exp-con {
+  width: 100%;
+  line-height: 2;
 }
 
 .exp-img-row {
   display: flex;
 }
 
-.exp-con {
-  line-height: 2;
-}
-
 .exp-imp-col {
-  width: 430px;
+  width: 100%;
   height: 100%;
   padding: 0 9px;
   position: relative;
@@ -581,6 +584,7 @@ figure {
 }
 
 .blog-con p {
+  width: 100%;
   line-height: 2;
 }
 
@@ -662,6 +666,7 @@ figure {
   width: 100%;
 }
 .form .form-title h2 {
+  width: 100%;
   font-size: 43px;
   font-weight: 400;
   color: var(--top-blue);
@@ -669,13 +674,13 @@ figure {
   margin-bottom: 25px;
 }
 .form .form-col-2 {
-  max-width: 45%;
+  width: 88%;
   margin-top: 100px;
   padding-bottom: 100px;
 }
 .form .form-col-2 .forms {
   margin-top: 90px;
-  max-width: 122%;
+  max-width: 100%;
 }
 .form .form-col-2 .in-size, .form .form-col-2 select {
   font-size: 16px;
@@ -692,12 +697,12 @@ figure {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("/img/select-arrow.b22d4c4b.svg");
+  background-image: url("./img/select-arrow.b22d4c4b.svg");
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
 }
 .form .form-col-2 .forms .left-form {
-  margin-right: 20px;
+  margin-right: 3%;
 }
 .form .form-col-2 .forms-2 {
   margin: 30px 0 30px 0;
@@ -709,7 +714,7 @@ figure {
   margin-bottom: 25px;
 }
 .form .form-col-2 .forms-4 .check-box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
@@ -833,6 +838,9 @@ footer .foot-con li {
   -moz-column-gap: 150px;
        column-gap: 150px;
 }
+.abrd-row img {
+  width: 100%;
+}
 
 .abrd-con {
   line-height: 2;
@@ -888,6 +896,9 @@ footer .foot-con li {
   -moz-column-gap: 180px;
        column-gap: 180px;
 }
+.study-row img {
+  width: 100%;
+}
 
 .study-title h2 {
   font-size: 41px;
@@ -939,6 +950,9 @@ footer .foot-con li {
   align-items: center;
   -moz-column-gap: 185px;
        column-gap: 185px;
+}
+.his-row img {
+  width: 100%;
 }
 
 .his-title h2 {
@@ -1135,7 +1149,7 @@ footer .foot-con li {
   .header-2 nav .close-btn {
     display: block;
     position: absolute;
-    top: 130px;
+    top: 70px;
     right: 15%;
   }
   .header-2 nav .left-nav {
@@ -1259,6 +1273,9 @@ footer .foot-con li {
     margin-top: 90px;
     max-width: 122%;
   }
+  .form .form-col-2 .forms .left-form {
+    margin-right: 0%;
+  }
   .form .form-col-2 .in-size, .form .form-col-2 select {
     font-size: 16px;
     width: 100%;
@@ -1319,6 +1336,10 @@ footer .foot-con li {
   .abrd-title h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+  .abroad .why .content {
+    height: 568px;
+    transform: translateY(10%);
   }
   /*courses*/
   /*banner*/
