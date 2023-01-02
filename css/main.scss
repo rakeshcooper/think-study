@@ -48,6 +48,7 @@ a{
     max-width: 100%;
     height: 44px;
     background-color: var(--top-blue);
+    z-index: 22;
 }
 
 .header .row{
@@ -82,7 +83,7 @@ a{
     position: sticky;
     top: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    z-index: 22;
      
     .menu{
         display: none;
@@ -138,7 +139,7 @@ a{
     margin-left: 25px;
 }
 
-.blue-btn{
+.blue-btn a{
     padding: 11px 30px;
     color: #fff;
     background-color: var(--blue-col);
@@ -167,7 +168,7 @@ a{
 .banner{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(0deg,hsla(0,3%,8%,.48),rgba(0,0,0,.48)) ,url("/img/banner_img_a1cfa1f4e1.jpg");
+    background-image: linear-gradient(0deg,hsla(0,3%,8%,.48),rgba(0,0,0,.48)) ,url("../img/banner_img_a1cfa1f4e1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -226,7 +227,7 @@ a{
 
 .why{
     height: 568px;
-    background-image: url("/img/notch-banner.daa42472.jpg");
+    background-image: url("../img/notch-banner.daa42472.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -581,9 +582,7 @@ figure{
     cursor: pointer;
 }
 
-.play-icon::after{
-    content: "";
-    display: block;
+.play-icon{
     position: absolute;
     top: 79%;
     left: 8%;
@@ -595,17 +594,17 @@ figure{
 
 .play-icon svg{
     position: absolute;
-    bottom: 11%;
-    right: 83%;
+    left: 20px;
+    top: 15px;
     z-index: 1;
 }
 
-.play-icon::after{
+.play-icon{
     background: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-.play-icon:hover::after{
+.play-icon:hover{
     background: var(--blue-col);
 }
 
@@ -771,7 +770,7 @@ figure{
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            background-image: url('./img/select-arrow.b22d4c4b.svg');
+            background-image: url('/img/select-arrow.b22d4c4b.svg');
             background-repeat: no-repeat;
             background-position: right 20px top 50%;
         }
@@ -789,49 +788,56 @@ figure{
 
         .forms-4{
             margin-top: 35px;
+            line-height: 1.5;
 
             .f4-content{
                 margin-bottom: 25px;
             }
+
+            
 
             .check-box{
                 display: flex;
                 align-items: center;
                 column-gap: 15px;
                 cursor: pointer;
-            }
-            .ch-size{
-                width: 22px;
-                height: 22px;
-                cursor: pointer;
-                display: none;
-            }
 
-            .checkbox--box{
-                width: 22px;
-                height: 22px;
-                border: 1px solid black;
-                border-radius: 3px;
-                position: relative;
+                .ch-size{
+                    width: 22px;
+                    height: 22px;
+                    cursor: pointer;
+                    display: none;
+                }
+    
+                .checkbox--box{
+                    width: 22px;
+                    height: 22px;
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    position: relative;
+                }
+    
+                .checkbox--box::after{
+                    content: "";
+                    position: absolute;
+                    left: 6px;
+                    top: .5px;
+                    width: 6px;
+                    height: 14px;
+                    border: solid linear-gradient(104.51deg,rgba(211, 197, 253, 0.1) -47.74%,rgba(252, 220, 252, 0.1) 153.26%);
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    
+                }
+    
+                .ch-size:checked + .checkbox--box::after{
+                    border: solid #1f1f1f;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    
+                }
             }
-
-            .checkbox--box::after{
-                content: "";
-                position: absolute;
-                left: 6px;
-                top: .5px;
-                width: 6px;
-                height: 14px;
-                border: solid linear-gradient(104.51deg,rgba(211, 197, 253, 0.1) -47.74%,rgba(252, 220, 252, 0.1) 153.26%);
-                border-width: 0 2px 2px 0;
-                transform: rotate(45deg);
-            }
-
-            .ch-size:checked + .checkbox--box::after{
-                border: solid #1f1f1f;
-                border-width: 0 2px 2px 0;
-                transform: rotate(45deg);
-            }
+            
 
             .form-sub{
                 padding: 10px 32px;
@@ -841,6 +847,18 @@ figure{
                 border: none;
                 margin-top: 30px;
             }
+
+            #error {
+                margin-top: 15px;
+                padding: 10px;
+                background-color: rgba(252, 0, 0, 0.1);
+                color: rgb(255, 2, 2);
+                border: 1px solid red;
+                border-radius: 8px;
+                display: none;
+              }
+
+             
         }
 
         .check-box-1,.check-box-2{
